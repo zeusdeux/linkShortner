@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8"/>
     <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/normalize.css' />
+    <link rel='stylesheet' href='/stylesheets/skeleton.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <main class="container">
+      <header class="row">
+        <h1>short.ly</h1>
+      </header>
+      <section class="row">
+        <form action="/shorten" method="POST" id="mainForm">
+          <input id="inputUrl" name="inputUrl" type="text" placeholder="Enter url" value=""/>
+          <input class="button-primary" name="submit" type="submit" value="Shorten"/>
+        </form>
+      </section>
+      <section class="row">
+        <div class="error hidden">
+          <label for="errorMsg">Error: <span id="errorMsg"></span></label>
+        </div>
+        <div class="success hidden">
+          <label for="successMsg">Success: <a id="successMsg" href="" target="_blank"></a></label>
+        </div>
+        <div class="info hidden">
+          <label for="infoMsg">Shortened link usage count: <span id="infoMsg"></span></label>
+        </div>
+      </section>
+    </main>
+    <script src="/javascripts/main.min.js"></script>
   </body>
 </html>

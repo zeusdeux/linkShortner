@@ -1,8 +1,21 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #4D5569;
 }
 
 a {
   color: #00B7FF;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: #F26666;
+}
+
+.success {
+  color: #57E088;
 }

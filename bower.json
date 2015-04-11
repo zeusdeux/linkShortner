@@ -1,0 +1,25 @@
+{
+  "name": "linkShortner",
+  "version": "1.0.0",
+  "authors": [
+    "Mudit Ameta <zeusdeux@gmail.com>"
+  ],
+  "description": "Shorten 'em links dawg!",
+  "keywords": [
+    "link",
+    "shortner",
+    "recurse",
+    "center"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton": "~2.0.4"
+  }
+}
