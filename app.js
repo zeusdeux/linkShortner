@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 //var d = require('debug')('linkShortner:app');
 
+var compression = require('compression');
 var app = express();
 
 // view engine setup
